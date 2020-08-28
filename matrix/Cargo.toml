@@ -1,0 +1,28 @@
+[package]
+name = "rink-matrix"
+version = "0.1.0"
+authors = ["Mikkel Kroman <mk@maero.dk>"]
+edition = "2018"
+description = "Matrix bot for rink"
+homepage = "https://github.com/tiffany352/rink-rs"
+repository = "https://github.com/tiffany352/rink-rs"
+license = "MPL-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+matrix-sdk = "0.1"
+tokio = { version = "0.2.22", features = ["full"] }
+serde = "1.0"
+toml = "0.5"
+thiserror = "1.0.20"
+anyhow = "1.0.32"
+url = "2.1.1"
+log = "0.4.11"
+env_logger = "0.7.1"
+lazy_static = "1.4.0"
+async-trait = "0.1.38"
+
+[dependencies.rink-core]
+path = "../core"
+
